@@ -17,4 +17,17 @@
     à l'élément le libre choix de l'/les attributs à animer. Voir fichiers CSS pour exemples
   */
   --default-transition: 300ms ease-in-out;
+
+  /*Offline*/
+  body.offline{
+    --primary-color: #e20505;
+    --primary-color-dark: #500000;
+    & button.icon-button, nav a  {
+      /* child of parent styles */
+      opacity:  0.5; 
+      pointer-events: none; 
+    }
+  }
+
+
 }

@@ -58,3 +58,16 @@ window.addEventListener("hashchange", router)
 
 // Appelé une fois dans le vide, pour mettre à jour l'état de l'app selon l'url demandée au chargement de la page
 router()
+window.addEventListener("offline", (e) => {
+  console.log("offline");
+  document.body.classList.add('offline');
+});
+
+window.addEventListener("online", (e) => {
+  console.log("online");
+  document.body.classList.remove('offline');
+});
+
+navigator.serviceWorker.register(
+  new URL('serviceWorker.js', import.meta.url)
+  )
