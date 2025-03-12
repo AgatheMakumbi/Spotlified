@@ -69,5 +69,5 @@ window.addEventListener("online", (e) => {
 });
 
 navigator.serviceWorker.register(
-  new URL('serviceWorker.js', import.meta.url)
+  new URL('OneSignalSDKWorker.js', import.meta.url)
   )
