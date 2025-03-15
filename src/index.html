@@ -23,6 +23,15 @@
   </head>
   <body>
     <header>
+      <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "9115848f-d389-4a23-9dc3-336e18a8258e",
+    });
+  });
+</script>
       <!-- ajouter la classe "animated" à #logo pour animer l'icône -->
       <a id="logo" href="/">
         <span class="material-icons">graphic_eq</span>

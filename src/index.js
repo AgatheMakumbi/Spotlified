@@ -71,3 +71,4 @@ window.addEventListener("online", (e) => {
 navigator.serviceWorker.register(
   new URL('OneSignalSDKWorker.js', import.meta.url)
   );
+// pour que ça fonctionne avec Onesignal
