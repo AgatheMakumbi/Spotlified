@@ -68,7 +68,7 @@ window.addEventListener("online", (e) => {
   document.body.classList.remove('offline');
 });
 
-navigator.serviceWorker.register(
-  new URL('OneSignalSDKWorker.js', import.meta.url)
-  );
+//navigator.serviceWorker.register(
+  //new URL('OneSignalSDKWorker.js', import.meta.url)
+  //);
 // pour que ça fonctionne avec Onesignal

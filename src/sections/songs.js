@@ -38,7 +38,10 @@ const displaySongArray = (songs) => {
     songItem.addEventListener('favorite_click', () => {
       // Est-ce que ça nous retourne quelque chose (et donc que c'est dans la liste?)
       if(getItem(song.id)) {
-        removeItem(song.id)
+        removeItem(song.id) //enlève du locale storage
+        if (window.location.hash === '#favorites') {
+          songItem.remove() // enlève du DOM HTML pour que la musique unliké disparaisse de l apage favoris sans avoir a reload la page
+        }
       } else {
         setItem(song.id, song)
       }

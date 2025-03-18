@@ -22,7 +22,7 @@ const displayArtists = async () => {
 
     // Mettre les attributs
     artistItem.setAttribute('image_url', artist.image_url)
-    artistItem.setAttribute('name', artist.name)
+    artistItem.setAttribute('title', artist.name)
     artistItem.setAttribute('href', `#artists-${artist.id}`)
 
     // Insérer dans la liste
